@@ -2,6 +2,9 @@ package com.luxoft.effectivejava.exercise1plus;
 
 import org.junit.Test;
 
+/**
+ * Make the test pass.
+ */
 public class UserPerformanceTest {
 
     @Test(timeout = 10_000)

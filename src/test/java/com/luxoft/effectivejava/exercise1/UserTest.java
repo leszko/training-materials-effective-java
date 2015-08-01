@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Exercise 1: Change constructor to static factory method.
+ * Change constructor to static factory method.
  */
 public class UserTest {
     @Test

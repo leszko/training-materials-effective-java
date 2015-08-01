@@ -3,6 +3,9 @@ package com.luxoft.effectivejava.exercise1plus;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Change the class to fix the UserPerformanceTest.
+ */
 public class User {
     private final Set<String> permutations;
 

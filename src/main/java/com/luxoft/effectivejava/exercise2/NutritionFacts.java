@@ -1,5 +1,8 @@
 package com.luxoft.effectivejava.exercise2;
 
+/**
+ * Add methods to fix the unit test.
+ */
 public class NutritionFacts {
     private final int calories;
     private final int fat;

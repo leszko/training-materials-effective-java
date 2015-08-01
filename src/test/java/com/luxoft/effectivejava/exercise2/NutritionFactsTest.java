@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Fix the test.
+ */
 public class NutritionFactsTest {
 
     @Test

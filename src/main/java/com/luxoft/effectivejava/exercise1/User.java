@@ -1,7 +1,7 @@
 package com.luxoft.effectivejava.exercise1;
 
 /**
- * Exercise 1: Change constructor to static factory method.
+ * Change constructor to static factory method.
  */
 public class User {
     private final String name;
