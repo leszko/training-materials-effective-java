@@ -5,22 +5,24 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * 1. Write unit test to break MathFunctions.abs().
+ * 1. Write unit test to break MathFunctions.absString().
  * 2. Add check parameter for validity.
  */
 public class MathFunctionsTest {
 
     @Test
-    public void shouldFail() {
-        // TODO: make this test fail
+    public void shouldReturnCorrectValue() {
+        // TODO: change positive variable to break assertion and not cause NumberFormatException
 
         // given
-        int n = -10;
+        String positive = "10";
+
+        String negative = "-" + positive;
 
         // when
-        int result = MathFunctions.abs(n);
+        String resultFromNegative = MathFunctions.absString(Integer.valueOf(negative));
 
         // then
-        assertEquals(-n, result);
+        assertEquals(positive, resultFromNegative);
     }
 }

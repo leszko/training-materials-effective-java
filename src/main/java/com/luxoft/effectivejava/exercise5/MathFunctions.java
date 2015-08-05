@@ -5,10 +5,10 @@ package com.luxoft.effectivejava.exercise5;
  * 2. Add check parameter for validity.
  */
 public class MathFunctions {
-    public static int abs(int n) {
+    public static String absString(int n) {
         if (n < 0) {
-            return -n;
+            return Integer.toString(-n);
         }
-        return n;
+        return Integer.toString(n);
     }
 }
