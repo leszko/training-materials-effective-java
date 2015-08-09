@@ -15,7 +15,7 @@ public class MathFunctionsTest {
         // TODO: change positive variable to break assertion and not cause NumberFormatException
 
         // given
-        String positive = "10";
+        String positive = "0000120";
 
         String negative = "-" + positive;
 
@@ -23,6 +23,14 @@ public class MathFunctionsTest {
         String resultFromNegative = MathFunctions.absString(Integer.valueOf(negative));
 
         // then
-        assertEquals(positive, resultFromNegative);
+        assertEquals(removeLeadingZeros(positive), resultFromNegative);
+    }
+
+    private static String removeLeadingZeros(String number) {
+        String result = number.replaceAll("^0+", "");
+        if (result.isEmpty()) {
+            return number;
+        }
+        return result;
     }
 }
