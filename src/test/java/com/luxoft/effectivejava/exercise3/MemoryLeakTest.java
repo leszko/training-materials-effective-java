@@ -3,7 +3,7 @@ package com.luxoft.effectivejava.exercise3;
 import org.junit.Test;
 
 /**
- * Change the MemoryLeak class to fix the unit test.
+ * Change the MemoryLeak class to make the test pass.
  */
 public class MemoryLeakTest {
 

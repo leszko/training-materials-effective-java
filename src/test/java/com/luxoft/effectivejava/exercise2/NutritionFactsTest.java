@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Fix the test.
+ * Fix the code to make the test pass.
  */
 public class NutritionFactsTest {
 
