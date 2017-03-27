@@ -1,14 +1,10 @@
 package com.leszko.effectivejava.exercise5;
 
 /**
- * 1. Write a unit test to break this function.
- * 2. Add check parameter for validity.
+ * Add a Precondition check and make the test pass.
  */
 public class MathFunctions {
-    public static String absString(int n) {
-        if (n < 0) {
-            return Integer.toString(-n);
-        }
-        return Integer.toString(n);
+    public static String toString(Long n) {
+        return String.valueOf(n);
     }
 }

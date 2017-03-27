@@ -2,35 +2,17 @@ package com.leszko.effectivejava.exercise5;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-
 /**
- * 1. Write unit test to break MathFunctions.absString().
- * 2. Add check parameter for validity.
+ * Add a Precondition check and make the test pass.
  */
 public class MathFunctionsTest {
 
-    @Test
-    public void shouldReturnCorrectValue() {
-        // TODO: change positive variable to break assertion and not cause NumberFormatException
-
+    @Test(expected = NullPointerException.class)
+    public void shouldThrowExceptionWhenNullIsPassed() {
         // given
-        String positive = "0000120";
+        Long n = null;
 
-        String negative = "-" + positive;
-
-        // when
-        String resultFromNegative = MathFunctions.absString(Integer.valueOf(negative));
-
-        // then
-        assertEquals(removeLeadingZeros(positive), resultFromNegative);
-    }
-
-    private static String removeLeadingZeros(String number) {
-        String result = number.replaceAll("^0+", "");
-        if (result.isEmpty()) {
-            return number;
-        }
-        return result;
+        // when & then
+        String result = MathFunctions.toString(n);
     }
 }
