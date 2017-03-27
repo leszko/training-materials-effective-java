@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Add a Precondition check and make the test pass.
  */
-public class MathFunctionsTest {
+public class LongFunctionsTest {
 
     @Test(expected = NullPointerException.class)
     public void shouldThrowExceptionWhenNullIsPassed() {
@@ -13,6 +13,6 @@ public class MathFunctionsTest {
         Long n = null;
 
         // when & then
-        String result = MathFunctions.toString(n);
+        String result = LongFunctions.toString(n);
     }
 }
