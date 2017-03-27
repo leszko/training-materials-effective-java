@@ -13,6 +13,6 @@ public class LongFunctionsTest {
         Long n = null;
 
         // when & then
-        String result = LongFunctions.toString(n);
+        LongFunctions.toString(n);
     }
 }
