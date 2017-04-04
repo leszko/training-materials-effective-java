@@ -9,8 +9,12 @@ import java.util.Set;
 public class User {
     private final Set<String> permutations;
 
-    public User(String name) {
+    private User(String name) {
         permutations = new HashSet<>(PermutationsUtil.performPermutations(name));
+    }
+
+    public static User create(String name) {
+        return new User(name);
     }
 
     public boolean isPermutationOf(String string) {

@@ -25,6 +25,14 @@ public class NutritionFacts {
             return this;
         }
 
+        public Builder sodium(int sodium) {
+            return this;
+        }
+
+        public Builder carbohydrate(int carbohydrate) {
+            return this;
+        }
+
         public NutritionFacts build() {
             return new NutritionFacts(this);
         }

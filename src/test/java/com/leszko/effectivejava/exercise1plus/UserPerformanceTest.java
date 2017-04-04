@@ -16,7 +16,7 @@ public class UserPerformanceTest {
 
         // when
         for (int i = 0; i < times; i++) {
-            users[i] = new User(name);
+            users[i] = User.create(name);
         }
     }
 

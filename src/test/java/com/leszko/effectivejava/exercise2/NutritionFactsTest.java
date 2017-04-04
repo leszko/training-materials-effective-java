@@ -18,7 +18,7 @@ public class NutritionFactsTest {
         int carbohydrate = 27;
 
         // when
-        NutritionFacts cocaCola = new NutritionFacts.Builder().calories(100).fat(25).build();
+        NutritionFacts cocaCola = new NutritionFacts.Builder().calories(100).fat(25).sodium(sodium).carbohydrate(carbohydrate).build();
 
         // then
         assertEquals(calories, cocaCola.getCalories());
